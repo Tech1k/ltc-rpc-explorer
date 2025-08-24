@@ -48,7 +48,7 @@ See [CHANGELOG.md](/CHANGELOG.md).
 
 1. Install `Litecoin Core` - [instructions](https://litecoin.com/learning-center/how-to-run-your-own-litecoin-node). Ensure that `Litecoin Core`'s' RPC server is enabled (`server=1`).
 2. Allow `Litecoin Core` to synchronize with the Litecoin network (you *can* use this tool while sychronizing, but some pages may fail).
-3. Install Node.js (16+ required, 18+ recommended).
+3. Install Node.js (18+ required, 22+ recommended).
 
 ### Note about pruning and indexing configurations
 
