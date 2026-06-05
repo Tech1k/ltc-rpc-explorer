@@ -1,3 +1,8 @@
+##### v3.6.1-ltc
+###### 2026-06-04
+* Sync dependencies with upstream btc-rpc-explorer (janoside/btc-rpc-explorer@26e282a)
+* Node.js 18+ now required (22+ recommended)
+
 ##### v3.6.0-ltc
 ###### 2025-04-19
 * Update logos and favicons for all networks
