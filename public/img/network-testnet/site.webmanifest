@@ -1,6 +1,6 @@
 {
-    "name": "@LitecoinExplorer",
-    "short_name": "@LitecoinExplorer",
+    "name": "LTC Testnet Explorer",
+    "short_name": "LTC Testnet Explorer",
     "icons": [
         {
             "src": "/img/network-mainnet/android-chrome-192x192.png",

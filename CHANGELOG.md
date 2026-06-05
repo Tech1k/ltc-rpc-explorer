@@ -1,3 +1,7 @@
+##### v3.6.2-ltc
+###### 2026-06-05
+* Remove references to the litecoinexplorer.org demo instance (no longer running)
+
 ##### v3.6.1-ltc
 ###### 2026-06-04
 * Sync dependencies with upstream btc-rpc-explorer (janoside/btc-rpc-explorer@26e282a)

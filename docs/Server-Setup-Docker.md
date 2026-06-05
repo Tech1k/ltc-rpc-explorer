@@ -1,4 +1,4 @@
-### Setup of https://litecoinexplorer.org on Ubuntu 20.04
+### Setup of a Litecoin Explorer instance on Ubuntu 20.04
 
 	# update and install packages
 	apt update

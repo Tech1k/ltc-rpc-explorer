@@ -18,17 +18,14 @@ html(lang="en")
 		+themeCss
 
 
-		link(id="canonical" rel="canonical" href="https://litecoinexplorer.org")
-
-		meta(property="og:title" content=(metaTitle != undefined ? metaTitle : "LitecoinExplorer.org - Open-Source Litecoin Explorer"))
+		meta(property="og:title" content=(metaTitle != undefined ? metaTitle : "Litecoin Explorer"))
 		meta(property="og:description" content=(metaDesc != undefined ? metaDesc : "Open-source, easy-to-use, educational Litecoin explorer whose only dependency is your Litecoin Core node."))
-		meta(property="og:image" content="https://litecoinexplorer.org/img/preview.png")
+		meta(property="og:image" content=(metaImgUrl != undefined ? metaImgUrl : "/img/preview.png"))
 
 		meta(property="twitter:card" content="summary_large_image")
-		meta(property="twitter:title" content=(metaTitle != undefined ? metaTitle : "LitecoinExplorer.org"))
+		meta(property="twitter:title" content=(metaTitle != undefined ? metaTitle : "Litecoin Explorer"))
 		meta(property="twitter:description" content=(metaDesc != undefined ? metaDesc : "Open-source, easy-to-use, educational Litecoin explorer whose only dependency is your Litecoin Core node."))
-		meta(property="twitter:image:src" content=(metaImgUrl != undefined ? metaImgUrl : "https://litecoinexplorer.org/img/preview.png"))
-		meta(property="twitter:domain" content="litecoinexplorer.org")
+		meta(property="twitter:image:src" content=(metaImgUrl != undefined ? metaImgUrl : "/img/preview.png"))
 
 		link(rel="apple-touch-icon", sizes="180x180", href=assetUrl("./img/network-mainnet/apple-touch-icon.png"))
 		link(rel="icon", type="image/png", sizes="32x32", href=assetUrl("./img/network-mainnet/favicon-32x32.png"))

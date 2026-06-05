@@ -8,7 +8,7 @@
 ---
 
 
-![homepage](./public/img/screenshots/homepage.png)
+![homepage](./public/img/preview.png)
 
 
 
@@ -17,11 +17,6 @@ This is a self-hosted explorer for the Litecoin blockchain, driven by RPC calls 
 This explorer was originally developed by [janoside](https://github.com/janoside) for Bitcoin. You can find the original Bitcoin version here: [btc-rpc-explorer](https://github.com/janoside/btc-rpc-explorer) Special thanks to him for creating this fantastic explorer.
 
 Whatever reasons you may have for running a full node (trustlessness, technical curiosity, supporting the network, etc) it's valuable to appreciate the *fullness* of your node. With this explorer, you can explore not just the blockchain database, but also explore all of the functional capabilities of your own node.
-
-
-Live demo:
-
-* [LitecoinExplorer.org](https://litecoinexplorer.org)
 
 
 # Features
@@ -111,7 +106,7 @@ ltc-rpc-explorer --port 8080 --litecoind-port 18443 --litecoind-cookie ~/.liteco
 
 #### Demo site settings
 
-To match the features visible on the demo site at [LitecoinExplorer.org](https://litecoinexplorer.org) you'll need to set the following non-default configuration values:
+To enable the additional demo/informational features of the site, you'll need to set the following non-default configuration values:
 
     LTCEXP_DEMO=true 		# enables some demo/informational aspects of the site
     LTCEXP_NO_RATES=false		# enables querying of exchange rate data

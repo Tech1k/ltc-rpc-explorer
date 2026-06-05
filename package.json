@@ -1,6 +1,6 @@
 {
 	"name": "ltc-rpc-explorer",
-	"version": "3.6.1-ltc",
+	"version": "3.6.2-ltc",
 	"description": "Open-source, self-hosted Litecoin explorer",
 	"private": false,
 	"bin": "bin/cli.js",

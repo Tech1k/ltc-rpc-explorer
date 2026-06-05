@@ -18,17 +18,14 @@ html(lang="en")
 		+themeCss
 		
 
-		link(id="canonical" rel="canonical" href="https://litecoinexplorer.org")
-
-		meta(property="og:title" content=(metaTitle != undefined ? metaTitle : "LitecoinExplorer.org - Open-Source Litecoin Explorer"))
+		meta(property="og:title" content=(metaTitle != undefined ? metaTitle : "Litecoin Explorer"))
 		meta(property="og:description" content=(metaDesc != undefined ? metaDesc : "Open-source, easy-to-use, educational Litecoin explorer whose only dependency is your Litecoin Core node."))
-		meta(property="og:image" content="https://litecoinexplorer.org/img/preview.png")
+		meta(property="og:image" content=(metaImgUrl != undefined ? metaImgUrl : "/img/preview.png"))
 
 		meta(property="twitter:card" content="summary_large_image")
-		meta(property="twitter:title" content=(metaTitle != undefined ? metaTitle : "LitecoinExplorer.org"))
+		meta(property="twitter:title" content=(metaTitle != undefined ? metaTitle : "Litecoin Explorer"))
 		meta(property="twitter:description" content=(metaDesc != undefined ? metaDesc : "Open-source, easy-to-use, educational Litecoin explorer whose only dependency is your Litecoin Core node."))
-		meta(property="twitter:image:src" content=(metaImgUrl != undefined ? metaImgUrl : "https://litecoinexplorer.org/img/preview.png"))
-		meta(property="twitter:domain" content="litecoinexplorer.org")
+		meta(property="twitter:image:src" content=(metaImgUrl != undefined ? metaImgUrl : "/img/preview.png"))
 
 		- var network = global.activeBlockchain || "main";
 		if (!network.endsWith("net") && network != "regtest")
@@ -281,30 +278,6 @@ html(lang="en")
 								span(style="font-size: 0.9em;")  (
 									a.footer-link(href="./changelog") changelog
 									span )
-
-					.col-lg-3
-						if (config.demoSite)
-							.mb-4
-								h6 Public Demos
-
-								.ms-2
-									if (coinConfig.demoSiteUrlsByNetwork && coinConfig.demoSiteUrlsByNetwork.main)
-										a.footer-link(href=coinConfig.demoSiteUrlsByNetwork.main) #{coinConfig.demoSiteUrlsByNetwork.main}
-									else
-										a.footer-link(href="https://litecoinexplorer.org") https://litecoinexplorer.org
-
-									br
-
-									a.footer-link(href="http://ltcexp7hhqr7w7neyfutw7bvbhpxwfh7de4dba6job2vsmo6lcyarvyd.onion", title="Tor v3 Hidden Service", data-bs-toggle="tooltip") ltcexp….onion
-									span.ms-1 (tor v3)
-									+copyTextButton("http://ltcexp7hhqr7w7neyfutw7bvbhpxwfh7de4dba6job2vsmo6lcyarvyd.onion")
-									
-									//div.mt-2
-									//	- var demoSites = ["main", "test"];
-										
-									//	each demoSite in demoSites
-									//		a.me-2(href=coinConfig.demoSiteUrlsByNetwork[demoSite], title=coinConfig.siteTitlesByNetwork[demoSite], data-bs-toggle="tooltip")
-									//			img(src=assetUrl(coinConfig.logoUrlsByNetwork[demoSite]), alt=coinConfig.siteTitlesByNetwork[demoSite], style="width: 40px; height: 40px;")
 
 					.col-lg-3
 						.mb-4
